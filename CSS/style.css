@@ -1,0 +1,1145 @@
+/*Elements principaux*/
+
+body {
+    font-family: 'Raleway', Arial, sans-serif;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+nav {
+    text-align: end;
+    padding-top: 40px;
+}
+
+nav a {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+nav a:hover {
+    border-top: solid 2px #0065FC;
+    padding-top: 38px;
+    color: #0065FC;
+}
+
+.logo {
+    display: flex;
+    margin-top: 0;
+    width: 8%;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+/* Formulaire */
+
+form {
+    display: flex;
+}
+
+label {
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F2F2F2;
+    border-radius: 15px 0 0 15px;
+}
+
+#centre_ville {
+    font-size: 15px;
+}
+
+#recherche {
+    border: 1px solid #f2f2f2;
+    font-weight: bold;
+    padding-left: 15px;
+}
+
+.fa-location-dot {
+    color: black;
+    border: 2px solid #f2f2f2;
+    padding: 1%;
+    border-radius: 15px 0 0 15px;
+    background-color: #f2f2f2;
+}
+
+.rechercher {
+    background-color: #0065FC;
+    color: white;
+    border: solid 2px #0065FC;
+    padding: 1%;
+    border-radius: 0 15px 15px 0;
+}
+
+.loupe {
+    display: none;
+}
+
+/* Main */
+
+main {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+/* Filtres */
+
+#filtres {
+    display: flex;
+    justify-content: normal;
+    margin-top: 2%;
+}
+
+#titre_filtres {
+    font-size: 18px;
+}
+
+.fa-money-bill-wave, .fa-child-reaching, .fa-heart, .fa-dog {
+    flex: auto;
+    border: solid #deebff 1px;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #deebff;
+    color: #0065FC;
+}
+
+#liste_filtre {
+    display: flex;
+}
+
+.filtre {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-top: solid 2px #f2f2f2;
+    border-bottom: solid 2px #f2f2f2;
+    border-right: solid 2px #f2f2f2;
+    font-weight: bold;
+    padding-right: 20px;
+    border-radius: 100px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.filtre:hover {
+    background-color: #deebff;
+    color: #0065FC;
+}
+
+.texte_filtre {
+    padding-left: 10px;
+}
+
+.filtre p {
+    padding-right: 5px;
+}
+
+/* Plus de 500 logements*/
+
+.fa-info {
+    border: solid 2px #f2f2f2;
+    padding: 5px 10px 5px 10px;
+    border-radius: 50%;
+    color: #0065FC;
+}
+
+#info {
+    font-size: 15px;
+}
+
+/* -------Partie logements------- */
+
+#logements {
+    display: flex;
+    margin: 0;
+}
+
+.fa-star {
+    color: #0065FC;
+    font-size: 13px;
+}
+
+.grise {
+    color: #F2F2F2;
+}
+
+span {
+    font-weight: bold;
+}
+
+/* Hébergements à Marseille */
+
+#hebergements {
+    display: flex;
+    width: 66%;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin-right: 3%;
+    background-color: #f2f2f2;
+    border-radius: 25px;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+#titre_hebergement {
+    font-size: 22px;
+    margin-left: 3%;
+    margin-top: 5%;
+    font-weight: bold;
+}
+
+#hebergement_marseille {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 6px;
+}
+
+.hotel_hebergement {
+    display: flex;
+    width: 28%;
+    height: 200px;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px rgba(174, 174, 174, 0.5);
+    margin-bottom: 4%;
+    padding-top: 7px;
+    padding-right: 7px;
+    padding-left: 7px;
+    position: relative;
+}
+
+.hotel_hebergement:hover {
+    transform: scale(1.1);
+}
+
+.cadre_image_hebergement {
+    width: 100%;
+    height: 110px;
+}
+
+.images_hebergements {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px 20px 0 0;
+}
+
+.texte {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.texte h2 {
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.texte p {
+    font-size: 14px;
+    margin: 3px;
+    padding-left: 6px;
+}
+
+.etoile {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 7px;
+    padding-left: 7px;
+}
+
+#afficher_plus {
+    font-weight: bold;
+    margin-bottom: 4%;
+    font-size: 20px;
+    margin-left: 4%;
+}
+
+
+/* Les plus populaires */
+
+#populaires {
+    width: 30%;
+    background-color: #F2F2F2;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+#titre_categorie_populaire {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0 20px 0 20px;
+    margin-left: 5%;
+    margin-top: 6%;
+    margin-bottom: 1%;
+}
+
+#titre_populaire {
+    font-size: 22px;
+}
+
+.noir {
+    font-size: 22px;
+    color: black;
+}
+
+#plus_populaires {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 81%;
+}
+
+.hotel_populaire {
+    width: 80%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(174, 174, 174, 0.5);
+    padding: 5px;
+    display: flex;
+    height: 150px;
+    margin: 0 auto 7%;
+    position: relative;
+}
+
+.hotel_populaire:hover {
+    transform: scale(1.1);
+}
+
+.cadre_image_populaire {
+    width: 125px;
+    height: 150px;
+}
+
+.hotel_populaire img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 18px 0 0 18px;
+}
+
+.texte_populaire {
+    width: 60%;
+    height: 100%;
+}
+
+.lien_populaire {
+    display: flex;
+}
+
+.texte_populaire h2 {
+    font-size: 15px;
+    margin-left: 10%;
+    margin-bottom: 1px;
+}
+
+.texte_populaire p {
+    font-size: 14px;
+    margin-left: 10%;
+    margin-top: 7px;
+}
+
+.etoile_populaire {
+    position: absolute;
+    bottom: 0;
+    padding-left: 17px;
+    padding-bottom: 10px;
+}
+
+/* Activites à Marseille */
+
+#activites {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#titre_activites {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 17px;
+    padding-bottom: 5px;
+    padding-top: 3%;
+}
+
+/* Colonne 1 */
+
+#part_1 {
+    display: flex;
+    width: 23%;
+    height: 450px;
+    flex-wrap: wrap;
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px rgba(174, 174, 174, 0.5);
+}
+
+#cadre_vieux_port {
+    width: 100%;
+    height: 400px;
+}
+
+.image_vieux_port {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 15%;
+    border-radius: 25px 25px 0 0;
+}
+
+#part_1:hover {
+    transform: scale(1.1);
+}
+
+/* Colonne 2 */
+
+#part_2 {
+    display: flex;
+    width: 23%;
+    height: 450px;
+    flex-wrap: wrap;
+}
+
+#fort_de_pomegues {
+    border-radius: 25px;
+    width: 100%;
+    height: 250px;
+    align-self: flex-start;
+    box-shadow: 2px 2px 5px rgba(174, 174, 174, 0.5);
+}
+
+#fort_de_pomegues:hover {
+    transform: scale(1.1);
+}
+
+#cadre_fort_de_pomegues {
+    width: 100%;
+    height: 200px;
+}
+
+.image_pomegues {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 36%;
+    border-radius: 25px 25px 0 0;
+}
+
+#iles_du_frioul {
+    border-radius: 25px;
+    width: 100%;
+    height: 175px;
+    margin-bottom: 0;
+    align-self: flex-end;
+    box-shadow: 2px 2px 5px rgba(174, 174, 174, 0.5);
+}
+
+#iles_du_frioul:hover {
+    transform: scale(1.1);
+}
+
+#cadre_iles_du_frioul {
+    width: 100%;
+    height: 125px;
+}
+
+.image_frioul {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 25%;
+    border-radius: 25px 25px 0 0;
+}
+
+/* Colonne 3 */
+
+#part_3 {
+    display: flex;
+    width: 23%;
+    height: 450px;
+    flex-wrap: wrap;
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px rgba(174, 174, 174, 0.5);
+}
+
+#part_3:hover {
+    transform: scale(1.1);
+}
+
+#cadre_parc_national_des_calanques {
+    width: 100%;
+    height: 400px;
+}
+
+.image_calanques {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 25px 25px 0 0;
+}
+
+/* Colonne 4 */
+
+#part_4 {
+    display: flex;
+    width: 23%;
+    height: 450px;
+    flex-wrap: wrap;
+}
+
+#notre_dame_de_la_garde {
+    border-radius: 25px;
+    width: 100%;
+    height: 200px;
+    align-self: flex-start;
+    box-shadow: 2px 2px 5px rgba(174, 174, 174, 0.5);
+}
+
+#notre_dame_de_la_garde:hover {
+    transform: scale(1.1);
+}
+
+#cadre_notre_dame_de_la_garde {
+    width: 100%;
+    height: 150px;
+}
+
+.image_notre_dame {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 10%;
+    border-radius: 25px 25px 0 0;
+}
+
+#parc_longchamp {
+    border-radius: 25px;
+    width: 100%;
+    height: 225px;
+    align-self: flex-end;
+    box-shadow: 2px 2px 5px rgba(174, 174, 174, 0.5);
+}
+
+#parc_longchamp:hover {
+    transform: scale(1.1);
+}
+
+#cadre_parc_longchamp {
+    width: 100%;
+    height: 175px;
+}
+
+.image_longchamp {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 15%;
+    border-radius: 25px 25px 0 0;
+}
+
+.legende_activites {
+    font-size: 15px;
+    padding-left: 25px;
+    padding-top: 5px;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    background-color: #F2F2F2;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 25px;
+    margin-top: 70px;
+    list-style-type: none;
+}
+
+.pied_de_page {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    padding-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.lien_footer {
+    padding-top: 10px;
+}
+
+
+/* VERSION TABLETTE */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    header {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .logo {
+        width: 15%;
+    }
+
+    nav {
+        padding-top: 50px;
+    }
+
+    Main {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    /* Filtres */
+    #filtres {
+        display: flex;
+        width: 85%;
+        justify-content: flex-start;
+    }
+
+    .filtre {
+        margin-right: 5px;
+        margin-left: 2px;
+        padding-right: 10px;
+    }
+
+    #filtres h2 {
+        width: 100%;
+        text-align: center;
+        margin-right: 10px;
+    }
+
+    .filtre p {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    /* Logements */
+    #logements {
+        flex-wrap: wrap;
+    }
+
+    /* Hebergements à Marseille */
+    #hebergements {
+        display: flex;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    #titre_hebergement {
+        margin-left: 3%;
+    }
+
+    .texte {
+        height: 90px;
+    }
+
+    .texte h2 {
+        font-size: 18px;
+        margin-top: 4px;
+        margin-bottom: 0;
+    }
+
+    .texte p {
+        margin: 0 0 18px 3px;
+    }
+
+    .etoile {
+        padding-bottom: 3px;
+    }
+
+
+    /* Les plus populaires*/
+    #populaires {
+        width: 100%;
+        padding-left: 1%;
+        padding-right: 1%;
+        margin-top: 25px;
+    }
+
+    #titre_categorie_populaire {
+        margin-top: 2%;
+        margin-left: 1%;
+    }
+
+    #plus_populaires {
+        display: flex;
+        flex-direction: row;
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+
+    .hotel_populaire {
+        width: 28%;
+        height: 200px;
+    }
+
+    .lien_populaire {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .cadre_image_populaire {
+        width: 100%;
+        height: 110px;
+    }
+
+    .hotel_populaire img {
+        border-radius: 18px 18px 0 0;
+    }
+
+    .texte_populaire {
+        width: 100%;
+    }
+
+    .texte_populaire h2 {
+        margin-left: 0;
+        margin-top: 6px;
+        padding-left: 10px;
+    }
+
+    .texte_populaire p {
+        margin: 3px 0;
+        padding-left: 10px;
+        padding-top: 2px;
+    }
+
+    .etoile_populaire {
+        margin-top: 0;
+    }
+
+    /* Activités à Marseille */
+    #part_1 {
+        width: 24%;
+        height: 400px;
+    }
+
+    #cadre_vieux_port {
+        height: 350px;
+    }
+
+    #part_2 {
+        width: 24%;
+        height: 400px;
+    }
+
+    #fort_de_pomegues {
+        height: 220px;
+    }
+
+    #cadre_fort_de_pomegues {
+        height: 170px;
+    }
+
+    #iles_du_frioul {
+        height: 165px;
+    }
+
+    #cadre_iles_du_frioul {
+        height: 115px;
+    }
+
+    #part_3 {
+        width: 24%;
+        height: 400px;
+    }
+
+    #cadre_parc_national_des_calanques {
+        height: 350px;
+    }
+
+    #part_4 {
+        width: 24%;
+        height: 400px;
+    }
+
+    #notre_dame_de_la_garde {
+        height: 185px;
+    }
+
+    #cadre_notre_dame_de_la_garde {
+        height: 135px;
+    }
+
+    .image_notre_dame {
+        object-position: center;
+    }
+
+    #parc_longchamp {
+        height: 200px;
+    }
+
+    #cadre_parc_longchamp {
+        height: 150px;
+    }
+
+    .image_longchamp {
+        object-position: center;
+    }
+
+    .legende_activites {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-left: 0;
+        padding-top: 10px;
+        margin: 0;
+    }
+
+    /* Footer */
+    footer {
+        margin-top: 40px;
+    }
+}
+
+
+/* VERSION MOBILE */
+@media screen and (max-width: 767px) {
+
+    [type=search] {
+        width: 100%;
+    }
+
+    #titre_activites h2 {
+        padding-left: 35px;
+    }
+
+    header {
+        margin: 0;
+    }
+
+    main {
+        margin: 0;
+    }
+
+    .logo {
+        order: -1;
+        width: 25%;
+        margin: auto;
+    }
+
+    nav {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    nav a {
+        width: 50%;
+        text-align: center;
+        padding: 0 0 20px;
+        border-bottom: solid 2px #F2F2F2;
+    }
+
+    nav a:hover {
+        border-top: none;
+        border-bottom: solid 2px #0065FC;
+        padding-bottom: 20px;
+        padding-top: 0;
+    }
+
+    /* Formulaire */
+    #formulaire {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    form {
+        height: 40px;
+    }
+
+    #titre_formulaire {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .rechercher {
+        display: none;
+    }
+
+    .loupe {
+        display: block;
+        background-color: #0065FC;
+        color: white;
+        border: solid 2px #0065FC;
+        padding: 0 2.5% 0 2.5%;
+        border-radius: 10px;
+    }
+
+    #recherche {
+        margin-right: -6px;
+    }
+
+    main {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /*Filtre*/
+    #filtres {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-left: 30px;
+        width: auto;
+    }
+
+    #liste_filtre {
+        flex-wrap: wrap;
+    }
+
+    .filtre {
+        margin-bottom: 15px;
+        margin-right: 5px;
+    }
+
+    #info {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    /* Partie Logements */
+    #logements {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    #hebergements:nth-child(1) {
+        order: 2;
+    }
+
+    #populaires:nth-child(2) {
+        order: 1;
+    }
+
+    #populaires {
+        width: 100%;
+        margin-top: 25px;
+        border-radius: 0;
+    }
+
+    #titre_categorie_populaire {
+        padding: 0 44px 0 5px;
+    }
+
+    .hotel_populaire {
+        width: 85%;
+        box-shadow: 2px 2px 5px rgba(90, 90, 90, 0.5);
+    }
+
+    #hebergements {
+        width: 100%;
+        margin-right: 0;
+        background-color: white;
+        flex-direction: column;
+        border-radius: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #titre_hebergement {
+        margin-left: 8%;
+        flex-wrap: wrap;
+    }
+
+    .hotel_hebergement {
+        width: 85%;
+        box-shadow: 2px 2px 5px rgba(90, 90, 90, 0.5);
+    }
+
+    .hotel_hebergement a {
+        width: 100%;
+    }
+
+    .cadre_image_hebergement {
+        width: 100%;
+    }
+
+    .texte {
+        flex-direction: column;
+    }
+
+    #afficher_plus {
+        margin-left: 8%;
+    }
+
+    /*Activités à Marseille*/
+    #activites {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #part_1 {
+        width: 85%;
+        height: 200px;
+        margin-bottom: 7%;
+        box-shadow: 2px 2px 5px rgba(90, 90, 90, 0.5);
+    }
+
+    #vieux_port {
+        width: 100%;
+        height: 200px;
+    }
+
+    #cadre_vieux_port {
+        width: 100%;
+        height: 150px;
+    }
+
+    .image_vieux_port {
+        object-position: center;
+    }
+
+    #part_2 {
+        width: 85%;
+        height: auto;
+    }
+
+    #fort_de_pomegues {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 7%;
+        box-shadow: 2px 2px 5px rgba(90, 90, 90, 0.5);
+    }
+
+    #cadre_fort_de_pomegues {
+        width: 100%;
+        height: 150px;
+    }
+
+    .image_pomegues {
+        object-position: center;
+    }
+
+    #iles_du_frioul {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 7%;
+        box-shadow: 2px 2px 5px rgba(90, 90, 90, 0.5);
+    }
+
+    #cadre_iles_du_frioul {
+        width: 100%;
+        height: 150px;
+    }
+
+    .image_frioul {
+        object-position: center;
+    }
+
+    #part_3 {
+        width: 85%;
+        height: 200px;
+        margin-bottom: 7%;
+        box-shadow: 2px 2px 5px rgba(90, 90, 90, 0.5);
+    }
+
+    #parc_national_des_calanques {
+        width: 100%;
+        height: 200px;
+    }
+
+    #cadre_parc_national_des_calanques {
+        width: 100%;
+        height: 150px;
+    }
+
+    .image_calanques {
+        object-position: center;
+    }
+
+    #part_4 {
+        width: 85%;
+        height: auto;
+    }
+
+    #notre_dame_de_la_garde {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 7%;
+        box-shadow: 2px 2px 5px rgba(90, 90, 90, 0.5);
+    }
+
+    #cadre_notre_dame_de_la_garde {
+        width: 100%;
+        height: 150px;
+    }
+
+    .image_notre_dame {
+        object-position: center;
+    }
+
+    #parc_longchamp {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 7%;
+        box-shadow: 2px 2px 5px rgba(90, 90, 90, 0.5);
+    }
+
+    #cadre_parc_longchamp {
+        width: 100%;
+        height: 150px;
+    }
+
+    .image_longchamp {
+        object-position: center;
+    }
+
+    /*Footer*/
+    footer {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .pied_de_page {
+        width: 100%;
+        margin: 0;
+    }
+
+    .pied_de_page h3 {
+        padding-left: 20px;
+    }
+
+    .lien_footer {
+        padding-left: 20px;
+    }
+}
